@@ -6,4 +6,7 @@ export const getters: GetterTree<CounterState, RootState> = {
     currentCount(state): number {
         return state.counter;
     },
+    currentName(state): string {
+        return state.name;
+    }
 };

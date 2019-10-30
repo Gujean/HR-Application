@@ -1,4 +1,4 @@
-export interface CounterState {
+export interface LoginState {
     counter: number;
     name: string;
 }

@@ -1,7 +1,12 @@
 <template>
   <div>
-    <p>Current count (Vuex):
+    <p>
+      Current count (Vuex):
       <strong>{{ currentCount }}</strong>
+    </p>
+    <p>
+      Current Name (Vuex) is {{currentName}}
+      <input type="text" v-model="currentName" />
     </p>
     <v-btn class="ma-2" color="info" @click.prevent="increment">Increment</v-btn>
     <v-btn class="ma-2" color="info" @click.prevent="reset">Reset</v-btn>
@@ -9,18 +14,28 @@
 </template>
 
 <script lang="ts">
-import { Action, Getter } from 'vuex-class';
-import { Component, Vue } from 'vue-property-decorator';
-const namespace: string = 'counter';
+import { Action, Getter } from "vuex-class";
+import { Component, Vue, Watch } from "vue-property-decorator";
+import { watch } from "fs";
+const namespace: string = "counter";
 
 @Component
 export default class Counter extends Vue {
-  @Getter('currentCount', { namespace })
+  @Getter("currentCount", { namespace })
   private currentCount!: number;
-  @Action('increment', { namespace })
+  @Getter("currentName", { namespace })
+  private currentName!: string;
+  @Action("increment", { namespace })
   private incrementCounter: any;
-  @Action('reset', { namespace })
+  @Action("reset", { namespace })
   private resetCounter: any;
+  // @Action("modifyName", { namespace })
+  // private modify: any;
+
+  // @Watch("currentName")
+  // modify() {
+  //   this.modifyName();
+  // }
 
   private increment() {
     this.incrementCounter();

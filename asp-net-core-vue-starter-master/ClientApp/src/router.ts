@@ -22,6 +22,38 @@ export default new Router({
       component: () => import(/* webpackChunkName: "counter" */ './views/Counter.vue'),
     },
     {
+      path: '/vacation',
+      name: 'vacation',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "counter" */ './components/Vacation.vue'),
+    },
+    {
+      path: '/kanban',
+      name: 'kanban',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "counter" */ './components/Kanban.vue'),
+    },
+    {
+      path: '/settings',
+      name: 'settings',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "counter" */ './components/Settings.vue'),
+    },
+    {
+      path: '/analytics',
+      name: 'analytics',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "counter" */ './components/Analytics.vue'),
+    },
+    {
       path: '/fetch-data',
       name: 'fetch-data',
       component: () => import(/* webpackChunkName: "fetch-data" */ './views/FetchData.vue'),

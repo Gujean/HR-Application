@@ -7,6 +7,7 @@ import { RootState } from '../types';
 
 export const state: CounterState = {
   counter: 0,
+  name: "vali"
 };
 
 const namespaced: boolean = true;
