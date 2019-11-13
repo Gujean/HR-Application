@@ -1,0 +1,10 @@
+C:\Users\Gujean\Desktop\HR-Application\UsersApi\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Gujean\Desktop\HR-Application\UsersApi\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Gujean\Desktop\HR-Application\UsersApi\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\Gujean\Desktop\HR-Application\UsersApi\bin\Debug\netcoreapp3.0\UsersApi.exe
+C:\Users\Gujean\Desktop\HR-Application\UsersApi\obj\Debug\netcoreapp3.0\UsersApi.csprojAssemblyReference.cache
+C:\Users\Gujean\Desktop\HR-Application\UsersApi\obj\Debug\netcoreapp3.0\staticwebassets\UsersApi.StaticWebAssets.Manifest.cache
+C:\Users\Gujean\Desktop\HR-Application\UsersApi\obj\Debug\netcoreapp3.0\staticwebassets\UsersApi.StaticWebAssets.xml
+C:\Users\Gujean\Desktop\HR-Application\UsersApi\obj\Debug\netcoreapp3.0\UsersApi.AssemblyInfoInputs.cache
+C:\Users\Gujean\Desktop\HR-Application\UsersApi\obj\Debug\netcoreapp3.0\UsersApi.AssemblyInfo.cs
+C:\Users\Gujean\Desktop\HR-Application\UsersApi\obj\Debug\netcoreapp3.0\UsersApi.RazorTargetAssemblyInfo.cache

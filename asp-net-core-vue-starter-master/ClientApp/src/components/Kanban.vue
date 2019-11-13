@@ -2,22 +2,23 @@
   <div>
     <v-container fluid style="padding:50px;">
       <v-layout row wrap>
-        <v-card
-          v-for="TaskType in TaskTypes"
-          :key="TaskType.name"
-          style="width:300px; min-height:400px; max-height:500px; overflow-y:auto; "
-        >
-          <v-card-title>
-            <v-sheet class="theme--light">
-              <!--v-scroll-y-transition></v-scroll-y-transition-->
-              <v-title>{{TaskType.title}}</v-title>
-              <v-card-subtitle>{{TaskType.subtitle}}</v-card-subtitle>
-              <v-card>
-                <v-card-text>{{TaskType.text}}</v-card-text>
-              </v-card>
-            </v-sheet>
-          </v-card-title>
-        </v-card>
+        <div v-for="TaskType in TaskTypes" :key="TaskType.name">
+          <h1>{{TaskType.name}}</h1>
+          <v-card
+            style="width:300px; min-height:400px; max-height:500px; overflow-y:auto; margin-left:3px; margin-right:5px;"
+          >
+            <v-card-title>
+              <v-sheet class="theme--light">
+                <!--v-scroll-y-transition></v-scroll-y-transition-->
+                <v-title>{{TaskType.title}}</v-title>
+                <v-card-subtitle>{{TaskType.subtitle}}</v-card-subtitle>
+                <v-card>
+                  <v-card-text>{{TaskType.text}}</v-card-text>
+                </v-card>
+              </v-sheet>
+            </v-card-title>
+          </v-card>
+        </div>
       </v-layout>
     </v-container>
   </div>
@@ -46,13 +47,13 @@ export default class Kanban extends Vue {
       text: "gasgas"
     },
     {
-      name: "Resolved",
+      name: "Stuck",
       title: "dasd",
       subtitle: "sgag",
       text: "gasgas"
     },
     {
-      name: "Stuck",
+      name: "Resolved",
       title: "dasd",
       subtitle: "sgag",
       text: "gasgas"

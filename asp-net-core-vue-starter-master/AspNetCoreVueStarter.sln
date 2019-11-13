@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2003
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreVueStarter", "AspNetCoreVueStarter.csproj", "{D1A4B196-FA92-4822-8C25-07D53A2903EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataApi", "..\UsersApi\DataApi.csproj", "{960344CD-C960-4F2C-910C-4C4F9779EDE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D1A4B196-FA92-4822-8C25-07D53A2903EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1A4B196-FA92-4822-8C25-07D53A2903EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1A4B196-FA92-4822-8C25-07D53A2903EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{960344CD-C960-4F2C-910C-4C4F9779EDE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{960344CD-C960-4F2C-910C-4C4F9779EDE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{960344CD-C960-4F2C-910C-4C4F9779EDE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{960344CD-C960-4F2C-910C-4C4F9779EDE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
